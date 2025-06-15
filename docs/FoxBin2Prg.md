@@ -10,7 +10,8 @@ As far as possible these are the original documents. Changes are added where fun
 
 ----
 ## Table of contents
-- [Source](#source)
+- [Use](#use)
+- [Download for development](#download-for-development)
 - [Requirements](#requirements)
 - [What is FoxBin2Prg](#what-is-foxbin2prg)
 - [Advantages](#advantages)
@@ -19,11 +20,14 @@ As far as possible these are the original documents. Changes are added where fun
 - [Usage](#usage)
 - [Keep reading](#keep-reading)
 
-## Source
-Original repository at https://github.com/fdbozzo/foxbin2prg.   
-Or install via [Thor](https://github.com/VFPX/Thor/blob/master/Docs/Thor_install.md), this keeps you on the latest version.
+## Use
+- Download the [runtime](https://github.com/fdbozzo/foxbin2prg/blob/master/ThorUpdater/FoxBin2Prg.zip) (same as used by Thor)
+- Or (best) install via [Thor](https://github.com/VFPX/Thor/blob/master/Docs/Thor_install.md), this keeps you on the latest version.
 
-## Download
+## Download for development
+### Source
+Original repository at https://github.com/fdbozzo/foxbin2prg.   
+### Rebuild additional files
 Regenerate after download / clone / pull from https://github.com/fdbozzo/foxbin2prg.   
 **Note: You you must run FoxBin2Prg against itself to create the binaries and exes.**   
 Run:
@@ -33,6 +37,9 @@ CD "path_to_FoxBin2Prg"
 DO ReCreate_FoxBin2Prg.prg
 ```   
 **Note: Do not run FoxBin2Prg.prg directly.**   
+**Note:** It is intended that there will be an error about _TESTS\FXUResults.db2_. This file could not be recreated because its per-dbf-configuration in _TESTS\FXUResults.dbf.cfg_ is set this way.
+The message says, FoxBin2Prg is doing this well. The message might no be at optimum, but this is the way the system runs. Feel free to add a besser message.
+
 ## Requirements
 - A copy of MS VFP9 SP1, at least _3504_
 - Runs with VFPA (Note, you need to recompile the EXE or use the PRG)
