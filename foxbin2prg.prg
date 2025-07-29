@@ -17515,7 +17515,7 @@ Define Class c_conversor_bin_a_prg As c_conversor_base
 						toFoxBin2Prg.changeFileAttribute( tcOutputFile, '-R' )
 					Endif
 
-					lnBytes	= Strtofile( tcCodigo, tcOutputFile )
+					lnBytes	= Strtofile( Strconv(tcCodigo, 9), tcOutputFile )
 						
 					This.writeLog( C_TAB + C_TAB + '- ' + loLang.C_FILENAME_LOC + ': ' + tcOutputFile + ' (' + Alltrim(Transform(lnBytes/1024,'######.##')) + '/' + Alltrim(Transform(Len(tcCodigo)/1024,'######.##')) + ' KiB)' )
 *THIS.writeLog( '- ' + loLang.C_GENERATED_FILE_SIZE_LOC )
